@@ -1,10 +1,7 @@
 import java.util.Arrays;
-import java.util.Collection;
+
 import java.util.List;
-import java.util.function.BinaryOperator;
-import java.util.function.Consumer;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
+
 
 public class Desafio2 {
     /*Desafio 2 - Imprima a soma dos números pares da lista:

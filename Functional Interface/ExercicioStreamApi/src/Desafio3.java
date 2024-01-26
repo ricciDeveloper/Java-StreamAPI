@@ -10,12 +10,17 @@ Com a ajuda da Stream API, verifique se todos os números da lista são positivo
 
 
         //passamos o array pelo streamm
-        numeros.stream()
-            //filtro em lambda para numeros positivos (maior q 0)
+        boolean positivo = numeros.stream()
+            //allMatch(Predicate<T> predicate): Verifica se todos os elementos da Stream atendem ao predicado especificado. Exemplo: stream.allMatch(n -> n > 0)
 
-            .filter( n -> n > 0)
-            //forEach para impressao com expressao lambda
-            .forEach(System.out::println);
+            .allMatch( n -> n > 0);
+        if(positivo){
+            System.out.println("Todos números são positivos");
+        }else{
+            System.out.println("Nem todos números são positivos.");
+        }
+            
+            
 
     }
 }
